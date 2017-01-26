@@ -24,8 +24,16 @@ class IDocument(Interface):
         and create a set of accounting entries.
         """
 
+class ICreditSlip(IDocument):
+        def addentry(entry):
+        """
+        Adds an accounting
+        entry in the credit slip.
+        """
+
 class IStorage(Interface):
     def store(document):
         """
         Store the document in storage
         """
+

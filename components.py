@@ -11,12 +11,13 @@ class Entry(object):
         self.dr=dr
         self.amount=amount
 
+@implementer(IDocument)
 class Document(object):
     def __init__(self, number, date):
         self.number=number
         self.date=date
 
-@implementer(IDocument)
+@implementer(ICreditSlip)
 class CreditSlip(Document):
     def __init__(self, number, date):
         super(CreditSlip, self).__init__(number, date)
