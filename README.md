@@ -5,3 +5,11 @@ Setup ISU proxy.
 ```bash
 git config --global http.proxy http://proxy.isu.ru:3128
 ```
+
+Setup user name and e-mail
+
+```bash
+git config --global user.name "ISU student."
+git config --global user.email "lab@irnok.net"
+```
+
