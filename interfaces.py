@@ -39,3 +39,18 @@ class IStorage(Interface):
         Store the document in storage
         """
 
+
+class IFigure(Interface):
+    def move(dx,dy):
+        """
+        Move component by dx,dy
+        """
+    def show():
+        """
+        Show component somehow
+        """
+
+    def hide():
+        """
+        Hide component
+        """
