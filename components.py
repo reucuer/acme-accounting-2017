@@ -1,4 +1,4 @@
-from interfaces import IAccountingEntry, IDocument, IStorage
+from interfaces import IAccountingEntry, IDocument, IStorage, ICreditSlip
 from zope.interface import implementer
 import datetime
 
