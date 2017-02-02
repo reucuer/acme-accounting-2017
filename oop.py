@@ -24,6 +24,7 @@ b = 20
 c = -40
 
 #FIXME: Add som informative message
+print ("Welcome to experimental branch")
 
 rc,value = sq_equation(a,b,c)
 if rc=="one":
