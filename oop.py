@@ -4,7 +4,7 @@ utf8stdout = open(1, 'w', encoding='utf-8', closefd=False)
 import sys
 sys.stdout = utf8stdout
 
-def sq_equation(a,b,c):
+def sq_equation(a:float,b:float,c:float):
     d=b*b-4*a*c
 
     if d>0:
