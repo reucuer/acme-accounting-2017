@@ -3,13 +3,21 @@ from zope.interface import implementer
 import datetime
 
 # Implementation.
+RUB = 643
+EUR = 810
+
 
 @implementer(IAccountingEntry)
 class Entry(object):
-    def __init__(self, cr, dr, amount):
+    def __init__(self, cr, dr, amount, currency=None, moment=None):
         self.cr=cr
         self.dr=dr
         self.amount=amount
+        if currency is None:
+            currency=RUB
+        self.currency=currency
+        if moment is None:
+            self.moment=datetime.datetime.utcnow()
 
 @implementer(IDocument)
 class Document(object):
