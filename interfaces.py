@@ -27,6 +27,8 @@ class IDocument(Interface):
         """
 
 class ICreditSlip(IDocument):
+        """Приходный ордер
+        """
         def addentry(entry):
             """
             Adds an accounting
@@ -40,17 +42,4 @@ class IStorage(Interface):
         """
 
 
-class IFigure(Interface):
-    def move(dx,dy):
-        """
-        Move component by dx,dy
-        """
-    def show():
-        """
-        Show component somehow
-        """
 
-    def hide():
-        """
-        Hide component
-        """
