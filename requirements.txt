@@ -1,3 +1,4 @@
 nose
 zope.component[zcml]
+psycopg2
 

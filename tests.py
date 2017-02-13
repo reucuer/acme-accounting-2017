@@ -29,7 +29,7 @@ class TestStorage:
         assert self.store.conn is not None
 
 
-class TestPostgesStorageAdapter:
+class TestPostgesStorageAdapter(TestEntryImplementation):
     def setUp(self):
         TestEntryImplementation.setUp(self)
         TestStorage.setUp(self)
