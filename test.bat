@@ -1,1 +1,1 @@
-C:\GNU\python\Scripts\nosetests.exe test.py
+C:\python27\Scripts\nosetests.exe tests.py
