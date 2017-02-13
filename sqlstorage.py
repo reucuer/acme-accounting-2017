@@ -24,8 +24,8 @@ class PostgresStorage:
         adapted_obj.store_into(self)
 
 @adapter(IAccountingEntry)
-@implementer(IStorageAdapter)
-class EntryToPostgresStorageAdapter:
+@implementer(IStorable)
+class AccountingEntryToPostgresStorageAdapter:
     def __init__(self, obj):
         self.obj=obj
 
