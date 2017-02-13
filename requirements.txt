@@ -1,4 +1,4 @@
 nose
 zope.component[zcml]
 psycopg2
-
+pyramid
