@@ -42,9 +42,13 @@ class IStorage(Interface):
         Store the document in storage
         """
 
-class IStorageAdapter(Interface):
+class IStorable(Interface):
     """Interface for description
     methods, which save and loads data
     for adaptee objects.
     """
+    def store_into(storage):
+        """Store data of adapted component
+        into the storage
+        """
 
